@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment (keep server/.env.example — never commit real secrets)
+.env
+.env.local
+.env.*.local
+
+# Local tool installs (not evidence)
+NFR_EVIDENCE/jmeter/apache-jmeter-*/
+NFR_EVIDENCE/jmeter/apache-jmeter-*.zip
+NFR_EVIDENCE/**/node_modules/
+
+# Uploads and runtime data
+server/uploads/
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+
+# Docker volumes (local)
+mongo_data/

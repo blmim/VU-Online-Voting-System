@@ -1,0 +1,351 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1787816766322,485,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,411,0,209
+1787816766311,498,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,424,0,219
+1787816766344,471,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,392,0,195
+1787816766324,487,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,412,0,204
+1787816766310,513,GET /,200,OK,Public pages — 10 users 2-5,text,true,,1233,114,8,18,http://127.0.0.1:5173/,512,0,229
+1787816766337,477,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,399,0,202
+1787816766824,4,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766824,5,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766743,89,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,16,0,1
+1787816766830,3,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,3,0,0
+1787816766830,5,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766828,9,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,9,0,0
+1787816766832,6,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,6,0,0
+1787816766316,526,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,419,0,210
+1787816766298,545,GET /,200,OK,Public pages — 10 users 2-1,text,true,,1233,114,8,18,http://127.0.0.1:5173/,545,0,234
+1787816766834,12,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,12,0,0
+1787816766836,12,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,11,0,0
+1787816766837,11,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,11,0,0
+1787816766838,11,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,11,0,0
+1787816766839,11,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,11,0,0
+1787816766847,4,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766844,7,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,7,0,0
+1787816766839,10,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,10,0,0
+1787816766848,5,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766848,5,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766850,4,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766851,5,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766852,5,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766852,6,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,6,0,0
+1787816766853,6,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,6,0,0
+1787816766853,6,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,6,0,0
+1787816766855,5,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766853,7,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,7,0,0
+1787816766857,4,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766858,3,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,3,0,0
+1787816766858,4,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766859,4,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,3,0,0
+1787816766859,4,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766313,551,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,424,0,212
+1787816766861,4,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766861,4,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766862,4,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766862,5,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766863,5,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766864,4,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,4,0,0
+1787816766864,5,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766866,5,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766865,5,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766866,5,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,5,0,0
+1787816766300,572,GET /,200,OK,Public pages — 10 users 2-4,text,true,,1233,114,8,18,http://127.0.0.1:5173/,572,0,235
+1787816766868,7,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,7,0,0
+1787816766869,8,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,8,0,0
+1787816766870,8,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,8,0,0
+1787816766869,9,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,9,0,0
+1787816766871,8,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,8,0,0
+1787816766871,8,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,8,0,0
+1787816766323,558,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,413,0,215
+1787816766324,560,GET /,200,OK,Public pages — 10 users 2-7,text,true,,1233,114,8,18,http://127.0.0.1:5173/,559,0,214
+1787816766306,587,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,431,0,223
+1787816766299,595,GET /,200,OK,Public pages — 10 users 2-6,text,true,,1233,114,8,18,http://127.0.0.1:5173/,595,0,236
+1787816766323,573,GET /,200,OK,Public pages — 10 users 2-3,text,true,,1233,114,8,18,http://127.0.0.1:5173/,572,0,213
+1787816766298,600,GET /,200,OK,Public pages — 10 users 2-2,text,true,,1233,114,8,18,http://127.0.0.1:5173/,600,0,231
+1787816766872,39,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,39,0,0
+1787816766880,94,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,93,0,0
+1787816766877,101,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,101,0,0
+1787816766878,100,GET /api/health,200,OK,Health API — 25 users 1-9,text,true,,1157,129,10,18,http://127.0.0.1:5000/api/health,99,0,0
+1787816766879,118,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,9,17,http://127.0.0.1:5000/api/health,118,0,0
+1787816766879,124,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,9,17,http://127.0.0.1:5000/api/health,124,0,0
+1787816766880,129,GET /api/health,200,OK,Health API — 25 users 1-8,text,true,,1157,129,9,17,http://127.0.0.1:5000/api/health,129,0,0
+1787816766883,150,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,150,0,0
+1787816766893,146,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,146,0,0
+1787816766761,278,GET /,200,OK,Public pages — 10 users 2-8,text,true,,1233,114,8,16,http://127.0.0.1:5173/,278,0,1
+1787816766824,217,GET /live,200,OK,Public pages — 10 users 2-5,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,217,0,3
+1787816766845,198,GET /live,200,OK,Public pages — 10 users 2-1,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,198,0,1
+1787816766873,172,GET /live,200,OK,Public pages — 10 users 2-4,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,172,0,1
+1787816766887,161,GET /live,200,OK,Public pages — 10 users 2-7,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,161,0,4
+1787816766895,157,GET /live,200,OK,Public pages — 10 users 2-6,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,157,0,0
+1787816766897,162,GET /live,200,OK,Public pages — 10 users 2-3,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,162,0,1
+1787816766899,163,GET /live,200,OK,Public pages — 10 users 2-2,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,163,0,1
+1787816767040,39,GET /live,200,OK,Public pages — 10 users 2-8,text,true,,1233,118,8,16,http://127.0.0.1:5173/live,39,0,0
+1787816767042,41,GET /,200,OK,Public pages — 10 users 2-5,text,true,,1233,114,8,16,http://127.0.0.1:5173/,41,0,1
+1787816767044,47,GET /,200,OK,Public pages — 10 users 2-1,text,true,,1233,114,8,16,http://127.0.0.1:5173/,47,0,1
+1787816767046,47,GET /,200,OK,Public pages — 10 users 2-4,text,true,,1233,114,8,16,http://127.0.0.1:5173/,47,0,1
+1787816767048,56,GET /,200,OK,Public pages — 10 users 2-7,text,true,,1233,114,8,16,http://127.0.0.1:5173/,56,0,1
+1787816767055,55,GET /,200,OK,Public pages — 10 users 2-6,text,true,,1233,114,8,16,http://127.0.0.1:5173/,55,0,2
+1787816766894,222,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,222,0,0
+1787816766912,204,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,204,0,0
+1787816767004,116,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,116,0,0
+1787816767034,88,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,87,0,0
+1787816767117,5,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,5,0,0
+1787816766975,148,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,148,0,0
+1787816766981,143,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,143,0,0
+1787816766998,127,GET /api/health,200,OK,Health API — 25 users 1-4,text,true,,1157,129,8,16,http://127.0.0.1:5000/api/health,127,0,0
+1787816767040,87,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,7,15,http://127.0.0.1:5000/api/health,87,0,0
+1787816767116,12,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,7,15,http://127.0.0.1:5000/api/health,12,0,0
+1787816767121,7,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,7,15,http://127.0.0.1:5000/api/health,7,0,0
+1787816767122,7,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,7,15,http://127.0.0.1:5000/api/health,7,0,0
+1787816767060,70,GET /,200,OK,Public pages — 10 users 2-3,text,true,,1233,114,8,15,http://127.0.0.1:5173/,69,0,1
+1787816767123,7,GET /api/health,200,OK,Health API — 25 users 1-1,text,true,,1157,129,7,15,http://127.0.0.1:5000/api/health,7,0,0
+1787816767123,8,GET /api/health,200,OK,Health API — 25 users 1-10,text,true,,1157,129,6,14,http://127.0.0.1:5000/api/health,8,0,0
+1787816767125,7,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,7,0,0
+1787816767127,6,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,6,0,0
+1787816767129,5,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,5,0,0
+1787816767129,8,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,8,0,0
+1787816767130,8,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,8,0,0
+1787816767135,4,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,4,0,0
+1787816767063,77,GET /,200,OK,Public pages — 10 users 2-2,text,true,,1233,114,8,14,http://127.0.0.1:5173/,77,0,1
+1787816767133,13,GET /api/health,200,OK,Health API — 25 users 1-3,text,true,,1157,129,6,14,http://127.0.0.1:5000/api/health,13,0,0
+1787816767133,13,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,6,14,http://127.0.0.1:5000/api/health,13,0,0
+1787816767137,11,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,11,0,0
+1787816767138,10,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,10,0,0
+1787816767140,19,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,19,0,0
+1787816767147,14,GET /api/health,200,OK,Health API — 25 users 1-5,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,14,0,0
+1787816767148,14,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,5,13,http://127.0.0.1:5000/api/health,14,0,0
+1787816767149,14,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,4,12,http://127.0.0.1:5000/api/health,14,0,0
+1787816767141,23,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1157,129,4,12,http://127.0.0.1:5000/api/health,23,0,3
+1787816767165,1,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1157,129,4,12,http://127.0.0.1:5000/api/health,1,0,0
+1787816767160,11,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,4,12,http://127.0.0.1:5000/api/health,11,0,0
+1787816767162,16,GET /api/health,200,OK,Health API — 25 users 1-7,text,true,,1157,129,4,12,http://127.0.0.1:5000/api/health,16,0,0
+1787816767164,17,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,3,11,http://127.0.0.1:5000/api/health,17,0,0
+1787816767182,2,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1157,129,3,11,http://127.0.0.1:5000/api/health,2,0,0
+1787816767168,21,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1157,129,3,11,http://127.0.0.1:5000/api/health,21,0,0
+1787816767175,15,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1157,129,3,11,http://127.0.0.1:5000/api/health,15,0,0
+1787816767187,4,GET /api/health,200,OK,Health API — 25 users 1-2,text,true,,1156,129,3,11,http://127.0.0.1:5000/api/health,4,0,0
+1787816767189,3,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,2,10,http://127.0.0.1:5000/api/health,3,0,0
+1787816767190,2,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1156,129,2,10,http://127.0.0.1:5000/api/health,2,0,0
+1787816767192,1,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,2,10,http://127.0.0.1:5000/api/health,1,0,0
+1787816767193,1,GET /api/health,200,OK,Health API — 25 users 1-6,text,true,,1156,129,2,10,http://127.0.0.1:5000/api/health,1,0,0
+1787816767194,1,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,1,9,http://127.0.0.1:5000/api/health,1,0,0
+1787816767196,2,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,1,9,http://127.0.0.1:5000/api/health,2,0,0
+1787816767198,1,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,1,9,http://127.0.0.1:5000/api/health,1,0,0
+1787816767200,7,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,1,9,http://127.0.0.1:5000/api/health,7,0,0
+1787816767207,2,GET /api/health,200,OK,Health API — 25 users 1-11,text,true,,1156,129,1,9,http://127.0.0.1:5000/api/health,2,0,0
+1787816767080,143,GET /,200,OK,Public pages — 10 users 2-8,text,true,,1233,114,8,8,http://127.0.0.1:5173/,143,0,1
+1787816767086,140,GET /live,200,OK,Public pages — 10 users 2-5,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,140,0,3
+1787816767091,136,GET /live,200,OK,Public pages — 10 users 2-1,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,136,0,1
+1787816767095,134,GET /live,200,OK,Public pages — 10 users 2-4,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,134,0,1
+1787816767107,126,GET /live,200,OK,Public pages — 10 users 2-7,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,126,0,1
+1787816767111,127,GET /live,200,OK,Public pages — 10 users 2-6,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,127,0,2
+1787816767130,111,GET /live,200,OK,Public pages — 10 users 2-3,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,111,0,1
+1787816767141,106,GET /live,200,OK,Public pages — 10 users 2-2,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,106,0,1
+1787816767224,28,GET /live,200,OK,Public pages — 10 users 2-8,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,28,0,1
+1787816767228,26,GET /,200,OK,Public pages — 10 users 2-1,text,true,,1233,114,9,9,http://127.0.0.1:5173/,26,0,0
+1787816767226,30,GET /,200,OK,Public pages — 10 users 2-5,text,true,,1233,114,9,9,http://127.0.0.1:5173/,30,0,1
+1787816767229,29,GET /,200,OK,Public pages — 10 users 2-4,text,true,,1233,114,9,9,http://127.0.0.1:5173/,29,0,1
+1787816767234,30,GET /,200,OK,Public pages — 10 users 2-7,text,true,,1233,114,9,9,http://127.0.0.1:5173/,30,0,2
+1787816767239,27,GET /,200,OK,Public pages — 10 users 2-6,text,true,,1233,114,9,9,http://127.0.0.1:5173/,27,0,1
+1787816767241,28,GET /,200,OK,Public pages — 10 users 2-3,text,true,,1233,114,9,9,http://127.0.0.1:5173/,28,0,1
+1787816767247,27,GET /,200,OK,Public pages — 10 users 2-2,text,true,,1233,114,9,9,http://127.0.0.1:5173/,27,0,1
+1787816767252,34,GET /,200,OK,Public pages — 10 users 2-9,text,true,,1233,114,9,9,http://127.0.0.1:5173/,33,0,1
+1787816767253,34,GET /,200,OK,Public pages — 10 users 2-8,text,true,,1233,114,9,9,http://127.0.0.1:5173/,34,0,1
+1787816767255,34,GET /live,200,OK,Public pages — 10 users 2-1,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,33,0,1
+1787816767256,34,GET /live,200,OK,Public pages — 10 users 2-5,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,34,0,1
+1787816767258,38,GET /live,200,OK,Public pages — 10 users 2-4,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,38,0,1
+1787816767270,27,GET /live,200,OK,Public pages — 10 users 2-3,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,27,0,0
+1787816767266,33,GET /live,200,OK,Public pages — 10 users 2-6,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,33,0,1
+1787816767265,37,GET /live,200,OK,Public pages — 10 users 2-7,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,36,0,1
+1787816767274,32,GET /live,200,OK,Public pages — 10 users 2-2,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,32,0,1
+1787816767286,29,GET /live,200,OK,Public pages — 10 users 2-9,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,29,0,1
+1787816767287,29,GET /live,200,OK,Public pages — 10 users 2-8,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,29,0,1
+1787816767289,29,GET /,200,OK,Public pages — 10 users 2-1,text,true,,1233,114,9,9,http://127.0.0.1:5173/,29,0,1
+1787816767291,29,GET /,200,OK,Public pages — 10 users 2-5,text,true,,1233,114,9,9,http://127.0.0.1:5173/,29,0,0
+1787816767296,25,GET /,200,OK,Public pages — 10 users 2-4,text,true,,1233,114,9,9,http://127.0.0.1:5173/,25,0,1
+1787816767300,22,GET /,200,OK,Public pages — 10 users 2-6,text,true,,1233,114,9,9,http://127.0.0.1:5173/,22,0,1
+1787816767298,25,GET /,200,OK,Public pages — 10 users 2-3,text,true,,1233,114,9,9,http://127.0.0.1:5173/,25,0,1
+1787816767302,23,GET /,200,OK,Public pages — 10 users 2-7,text,true,,1233,114,9,9,http://127.0.0.1:5173/,23,0,1
+1787816767307,39,GET /,200,OK,Public pages — 10 users 2-2,text,true,,1233,114,9,9,http://127.0.0.1:5173/,39,0,1
+1787816767315,33,GET /,200,OK,Public pages — 10 users 2-9,text,true,,1233,114,9,9,http://127.0.0.1:5173/,33,0,1
+1787816767316,34,GET /,200,OK,Public pages — 10 users 2-8,text,true,,1233,114,9,9,http://127.0.0.1:5173/,34,0,1
+1787816767319,44,GET /live,200,OK,Public pages — 10 users 2-1,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,44,0,0
+1787816767320,45,GET /live,200,OK,Public pages — 10 users 2-5,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,45,0,1
+1787816767321,49,GET /live,200,OK,Public pages — 10 users 2-4,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,48,0,1
+1787816767323,53,GET /live,200,OK,Public pages — 10 users 2-6,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,53,0,1
+1787816767324,53,GET /live,200,OK,Public pages — 10 users 2-3,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,53,0,1
+1787816767325,54,GET /live,200,OK,Public pages — 10 users 2-7,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,54,0,1
+1787816767347,45,GET /live,200,OK,Public pages — 10 users 2-2,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,45,0,0
+1787816767348,46,GET /live,200,OK,Public pages — 10 users 2-9,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,46,0,1
+1787816767352,43,GET /live,200,OK,Public pages — 10 users 2-8,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,43,0,2
+1787816767363,34,GET /,200,OK,Public pages — 10 users 2-1,text,true,,1233,114,9,9,http://127.0.0.1:5173/,34,0,2
+1787816767365,33,GET /,200,OK,Public pages — 10 users 2-5,text,true,,1233,114,9,9,http://127.0.0.1:5173/,33,0,3
+1787816767371,28,GET /,200,OK,Public pages — 10 users 2-4,text,true,,1233,114,9,9,http://127.0.0.1:5173/,28,0,2
+1787816767376,27,GET /,200,OK,Public pages — 10 users 2-6,text,true,,1233,114,9,9,http://127.0.0.1:5173/,27,0,1
+1787816767378,27,GET /,200,OK,Public pages — 10 users 2-3,text,true,,1233,114,9,9,http://127.0.0.1:5173/,27,0,1
+1787816767380,27,GET /,200,OK,Public pages — 10 users 2-7,text,true,,1233,114,9,9,http://127.0.0.1:5173/,27,0,1
+1787816767393,35,GET /,200,OK,Public pages — 10 users 2-2,text,true,,1233,114,9,9,http://127.0.0.1:5173/,35,0,0
+1787816767394,35,GET /,200,OK,Public pages — 10 users 2-9,text,true,,1233,114,9,9,http://127.0.0.1:5173/,35,0,1
+1787816767395,36,GET /,200,OK,Public pages — 10 users 2-8,text,true,,1233,114,9,9,http://127.0.0.1:5173/,36,0,1
+1787816767397,36,GET /live,200,OK,Public pages — 10 users 2-1,text,true,,1233,118,9,9,http://127.0.0.1:5173/live,36,0,1
+1787816767398,45,GET /live,200,OK,Public pages — 10 users 2-5,text,true,,1233,118,8,8,http://127.0.0.1:5173/live,45,0,1
+1787816767400,44,GET /live,200,OK,Public pages — 10 users 2-4,text,true,,1233,118,7,7,http://127.0.0.1:5173/live,44,0,2
+1787816767404,42,GET /live,200,OK,Public pages — 10 users 2-6,text,true,,1233,118,6,6,http://127.0.0.1:5173/live,41,0,1
+1787816767405,46,GET /live,200,OK,Public pages — 10 users 2-3,text,true,,1233,118,5,5,http://127.0.0.1:5173/live,45,0,1
+1787816767408,48,GET /live,200,OK,Public pages — 10 users 2-7,text,true,,1233,118,4,4,http://127.0.0.1:5173/live,48,0,0
+1787816767428,33,GET /live,200,OK,Public pages — 10 users 2-2,text,true,,1233,118,3,3,http://127.0.0.1:5173/live,33,0,1
+1787816767430,33,GET /live,200,OK,Public pages — 10 users 2-9,text,true,,1233,118,2,2,http://127.0.0.1:5173/live,33,0,0
+1787816767432,32,GET /live,200,OK,Public pages — 10 users 2-8,text,true,,1233,118,2,2,http://127.0.0.1:5173/live,32,0,0
+1787816767464,8,GET /,200,OK,Public pages — 10 users 2-9,text,true,,1233,114,1,1,http://127.0.0.1:5173/,7,0,0
+1787816767472,5,GET /live,200,OK,Public pages — 10 users 2-9,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,5,0,1
+1787816767478,2,GET /,200,OK,Public pages — 10 users 2-9,text,true,,1233,114,1,1,http://127.0.0.1:5173/,2,0,0
+1787816767480,7,GET /live,200,OK,Public pages — 10 users 2-9,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,7,0,1
+1787816767526,2,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,1
+1787816767529,1,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767531,1,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767532,1,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767534,4,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,4,0,0
+1787816767539,2,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816767541,1,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767542,1,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767543,2,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816767545,1,GET /api/health,200,OK,Health API — 25 users 1-12,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767761,3,GET /,200,OK,Public pages — 10 users 2-10,text,true,,1233,114,1,1,http://127.0.0.1:5173/,3,0,0
+1787816767764,13,GET /live,200,OK,Public pages — 10 users 2-10,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,13,0,1
+1787816767777,3,GET /,200,OK,Public pages — 10 users 2-10,text,true,,1233,114,1,1,http://127.0.0.1:5173/,3,0,1
+1787816767781,23,GET /live,200,OK,Public pages — 10 users 2-10,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,23,0,2
+1787816767804,6,GET /,200,OK,Public pages — 10 users 2-10,text,true,,1233,114,1,1,http://127.0.0.1:5173/,6,0,1
+1787816767811,11,GET /live,200,OK,Public pages — 10 users 2-10,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,11,0,1
+1787816767823,4,GET /,200,OK,Public pages — 10 users 2-10,text,true,,1233,114,1,1,http://127.0.0.1:5173/,4,0,1
+1787816767828,16,GET /live,200,OK,Public pages — 10 users 2-10,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,16,0,1
+1787816767845,3,GET /,200,OK,Public pages — 10 users 2-10,text,true,,1233,114,1,1,http://127.0.0.1:5173/,3,0,0
+1787816767848,8,GET /live,200,OK,Public pages — 10 users 2-10,text,true,,1233,118,1,1,http://127.0.0.1:5173/live,8,0,1
+1787816767931,16,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,16,0,15
+1787816767948,1,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767957,2,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816767959,2,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816767962,1,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767964,1,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816767965,2,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816767972,5,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,5,0,0
+1787816767978,2,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816767980,2,GET /api/health,200,OK,Health API — 25 users 1-13,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816768325,3,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,2
+1787816768328,1,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768330,1,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768331,5,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,5,0,0
+1787816768336,2,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816768338,2,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816768340,1,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768341,1,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768343,0,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,0,0,0
+1787816768344,0,GET /api/health,200,OK,Health API — 25 users 1-14,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,0,0,0
+1787816768725,3,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,1
+1787816768729,2,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816768731,6,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,6,0,0
+1787816768738,2,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816768741,1,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768743,2,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816768745,1,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768747,3,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816768752,5,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,4,0,0
+1787816768757,2,GET /api/health,200,OK,Health API — 25 users 1-15,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769130,6,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,6,0,1
+1787816769136,3,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816769140,15,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,15,0,0
+1787816769156,1,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769157,2,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769161,1,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769163,13,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,8,0,0
+1787816769176,3,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769179,2,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769181,12,GET /api/health,200,OK,Health API — 25 users 1-16,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,12,0,0
+1787816769523,2,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,1
+1787816769525,1,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769526,2,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769528,1,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769529,1,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769531,3,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816769534,5,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,4,0,0
+1787816769539,1,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769541,1,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769542,1,GET /api/health,200,OK,Health API — 25 users 1-17,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769922,3,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,2
+1787816769926,2,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769928,2,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816769932,5,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,5,0,0
+1787816769938,2,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769940,1,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769942,1,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769944,1,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769945,1,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816769947,4,GET /api/health,200,OK,Health API — 25 users 1-18,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,4,0,0
+1787816770339,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,1
+1787816770341,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770343,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770345,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770348,3,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816770351,3,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816770354,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770356,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770359,1,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816770360,2,GET /api/health,200,OK,Health API — 25 users 1-19,text,true,,1156,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770722,4,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,4,0,2
+1787816770726,2,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770728,1,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816770730,2,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770733,2,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816770737,3,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816770740,1,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816770741,1,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816770743,1,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816770745,1,GET /api/health,200,OK,Health API — 25 users 1-20,text,true,,1155,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771121,56,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,56,0,1
+1787816771178,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816771181,5,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,5,0,0
+1787816771186,5,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,5,0,0
+1787816771191,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816771194,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771196,7,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,7,0,0
+1787816771204,3,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816771207,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816771209,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-21,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816771574,4,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,4,0,1
+1787816771578,9,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,9,0,0
+1787816771588,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771589,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771591,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771592,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771594,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771595,6,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,6,0,0
+1787816771602,4,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816771606,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-22,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771921,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,1
+1787816771923,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771925,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771926,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771928,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771930,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816771932,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816771934,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771935,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816771937,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-23,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772320,3,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,3,0,2
+1787816772324,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772326,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772327,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772329,3,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816772333,3,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,3,0,0
+1787816772337,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772338,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816772340,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772341,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-24,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772726,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,1
+1787816772728,2,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,2,0,0
+1787816772731,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772733,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772735,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772736,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772737,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772739,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772740,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0
+1787816772742,1,GET /api/health,429,Too Many Requests,Health API — 25 users 1-25,text,false,,1147,129,1,1,http://127.0.0.1:5000/api/health,1,0,0

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-label="Victoria University Sydney">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003366"/>
+      <stop offset="100%" stop-color="#004080"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A572"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C5A572"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield badge -->
+  <path d="M70 8 L118 28 L118 72 C118 98 95 118 70 132 C45 118 22 98 22 72 L22 28 Z" fill="url(#navyGrad)" stroke="#D4AF37" stroke-width="2.5"/>
+  <!-- Gold accent stripe -->
+  <path d="M70 22 L104 36 L104 44 L70 30 L36 44 L36 36 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  <!-- Stylized V monogram -->
+  <path d="M48 52 L58 88 L70 58 L82 88 L92 52 L84 52 L76 78 L70 62 L64 78 L56 52 Z" fill="#FFFFFF"/>
+  <!-- Sydney label -->
+  <text x="70" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#D4AF37" letter-spacing="3">SYDNEY</text>
+</svg>

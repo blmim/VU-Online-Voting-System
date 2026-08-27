@@ -1,0 +1,42 @@
+﻿{
+    "healthBodies":  [
+                         "{\"status\":\"ok\",\"timestamp\":\"2026-08-26T03:22:29.424Z\",\"mongodb\":\"connected\"}",
+                         "{\"status\":\"ok\",\"timestamp\":\"2026-08-26T03:22:29.472Z\",\"mongodb\":\"connected\"}",
+                         "{\"status\":\"ok\",\"timestamp\":\"2026-08-26T03:22:29.487Z\",\"mongodb\":\"connected\"}",
+                         "{\"status\":\"ok\",\"timestamp\":\"2026-08-26T03:22:29.501Z\",\"mongodb\":\"connected\"}",
+                         "{\"status\":\"ok\",\"timestamp\":\"2026-08-26T03:22:29.516Z\",\"mongodb\":\"connected\"}"
+                     ],
+    "capturedAt":  "2026-08-26T03:22:29.7029518Z",
+    "clientHtml":  [
+                       {
+                           "path":  "/",
+                           "status":  200,
+                           "ms":  16.55
+                       },
+                       {
+                           "path":  "/login",
+                           "status":  200,
+                           "ms":  16.37
+                       },
+                       {
+                           "path":  "/register",
+                           "status":  200,
+                           "ms":  17.06
+                       }
+                   ],
+    "curlLines":  [
+                      "http_code=200 time_total=0.001832 time_connect=0.000877 time_starttransfer=0.001771",
+                      "http_code=200 time_total=0.002032 time_connect=0.000830 time_starttransfer=0.001933",
+                      "http_code=200 time_total=0.001971 time_connect=0.001023 time_starttransfer=0.001888",
+                      "http_code=200 time_total=0.001850 time_connect=0.000820 time_starttransfer=0.001755",
+                      "http_code=200 time_total=0.001903 time_connect=0.000799 time_starttransfer=0.001837"
+                  ],
+    "invokeWebRequestMs":  [
+                               90.68,
+                               14.49,
+                               13.47,
+                               13.55,
+                               13.47
+                           ],
+    "healthUrl":  "http://127.0.0.1:5000/api/health"
+}

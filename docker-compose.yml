@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:7
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+  server:
+    build: ./server
+    ports:
+      - '5000:5000'
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/online_voting_system
+      - JWT_SECRET=change-in-production
+      - CLIENT_URL=http://localhost:5173
+    depends_on:
+      - mongodb
+    volumes:
+      - ./server/uploads:/app/uploads
+  client:
+    build: ./client
+    ports:
+      - '5173:5173'
+    depends_on:
+      - server
+
+volumes:
+  mongo_data:
