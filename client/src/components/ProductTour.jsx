@@ -37,14 +37,13 @@ const TOUR_STEP_DEFS = [
     disableBeacon: true,
   },
   {
-    target: '[data-tour="skip-to-content"]',
+    target: 'body',
     title: 'Skip to Main Content',
     summary: 'Jump past the header on any page.',
-    content: 'Press Tab once after loading a page to reach this link. It moves focus straight to the main content area.',
+    content: 'Press Tab once after loading a page to reach the skip link. It moves focus straight to the main content area — visually hidden until focused, then appears top-left with a gold background.',
     accessibility: 'Visually hidden until focused, then appears top-left with a gold background.',
     keyboard: 'Tab once, then Enter to activate.',
-    placement: 'bottom',
-    focusTarget: true,
+    placement: 'center',
   },
   {
     target: '[data-tour="tile-grid"]',
@@ -63,7 +62,22 @@ const TOUR_STEP_DEFS = [
     placement: 'bottom',
   },
   {
+    target: '[data-tour="tile-live-results"]',
+    title: 'Live Results',
+    summary: 'Real-time championship scoreboard.',
+    content: 'Watch vote counts update live during active elections. Open this tile to see standings, percentages, and trending candidates on the public results page.',
+    placement: 'bottom',
+  },
+  {
+    target: '[data-tour="tile-polls"]',
+    title: 'Public Polls',
+    summary: 'Community predictions and quick surveys.',
+    content: 'Participate in non-binding polls to gauge campus opinion. Polls are separate from official ballots and do not affect election outcomes.',
+    placement: 'bottom',
+  },
+  {
     target: '[data-tour="tile-vote"]',
+    fallbackTarget: 'body',
     title: 'Cast Your Vote',
     summary: 'Sign in required — submit official ballots here.',
     content: 'After logging in, open this tile to see open ballots. Select candidates, review your choices, and submit. You receive a receipt token to verify your vote later.',
@@ -72,9 +86,10 @@ const TOUR_STEP_DEFS = [
   },
   {
     target: '[data-tour="main-nav"]',
+    fallbackTarget: 'body',
     title: 'Top Navigation',
     summary: 'Reach any section from every page.',
-    content: 'The nav bar stays fixed at the top. Hover a link to see where it goes. The current page is highlighted in gold.',
+    content: 'The nav bar stays fixed at the top on desktop. Hover a link to see where it goes. The current page is highlighted in gold. On mobile, tap the menu icon for the same links.',
     accessibility: 'Active page links use aria-current for screen readers.',
     keyboard: 'Tab through links, Enter to navigate.',
     placement: 'bottom',
@@ -85,6 +100,15 @@ const TOUR_STEP_DEFS = [
     summary: 'Find elections, candidates, polls, and pages.',
     content: 'Click the magnifying glass or press Ctrl+K (Cmd+K on Mac). Results are grouped by type and recent searches are saved.',
     keyboard: 'Ctrl+K opens search. Arrow keys move through results. Enter selects. Escape closes.',
+    placement: 'bottom',
+  },
+  {
+    target: '[data-tour="login-register"]',
+    fallbackTarget: 'body',
+    title: 'Login & Register',
+    summary: 'Create an account or sign in with OTP.',
+    content: 'New voters register with a VU email address and verify via one-time password. Returning users sign in the same way — no password to remember.',
+    keyboard: 'Use Tab to reach Login or Register in the header.',
     placement: 'bottom',
   },
   {
@@ -103,6 +127,20 @@ const TOUR_STEP_DEFS = [
     placement: 'top',
   },
   {
+    target: 'body',
+    title: 'Voting Flow',
+    summary: 'From ballot to receipt in four steps.',
+    content: '1) Sign in → 2) Open Vote or My Ballots → 3) Select candidates and submit → 4) Save your receipt token and verify it on the Verify Receipt page.',
+    placement: 'center',
+  },
+  {
+    target: 'body',
+    title: 'Admin Dashboard',
+    summary: 'Election management for administrators.',
+    content: 'Admins can create elections, review candidate applications, publish results, and audit vote logs from /admin. This area is restricted to authorised staff accounts.',
+    placement: 'center',
+  },
+  {
     target: '[data-tour="a11y-toggle"]',
     title: 'Accessibility Mode',
     summary: 'Stronger focus rings and larger tap targets.',
@@ -118,6 +156,7 @@ const TOUR_STEP_DEFS = [
   },
   {
     target: '[data-tour="tutorial-replay"]',
+    fallbackTarget: '[data-tour="tutorial-nav"]',
     title: "You're All Set!",
     summary: 'Replay this tour anytime.',
     content: 'Tap the Tutorial tile on the home dashboard or the Tutorial button in the nav bar to see this guide again.',
@@ -126,16 +165,30 @@ const TOUR_STEP_DEFS = [
   },
 ];
 
-function isElementVisible(el) {
-  if (!el) return false;
+function isTargetUsable(el) {
+  if (!el || el === document.body) return el === document.body;
   const rect = el.getBoundingClientRect();
   if (rect.width <= 0 || rect.height <= 0) return false;
   const style = window.getComputedStyle(el);
-  return style.visibility !== 'hidden' && style.display !== 'none' && style.opacity !== '0';
+  if (style.visibility === 'hidden' || style.display === 'none' || style.opacity === '0') return false;
+  if (rect.left < -500 || rect.top < -500) return false;
+  return true;
+}
+
+function resolveTarget(selector, fallback = 'body') {
+  if (selector === 'body') return 'body';
+  const el = document.querySelector(selector);
+  if (isTargetUsable(el)) return selector;
+  if (fallback && fallback !== selector) {
+    if (fallback === 'body') return 'body';
+    const fallbackEl = document.querySelector(fallback);
+    if (isTargetUsable(fallbackEl)) return fallback;
+  }
+  return 'body';
 }
 
 function getSmartPlacement(el, preferred) {
-  if (!el) return preferred;
+  if (!el || el === document.body) return preferred === 'center' ? 'center' : preferred;
   const rect = el.getBoundingClientRect();
   const nearBottom = rect.bottom > window.innerHeight - 140;
   const nearRight = rect.right > window.innerWidth - 160;
@@ -149,7 +202,7 @@ function getSmartPlacement(el, preferred) {
 }
 
 function scrollTargetIntoView(el, reducedMotion) {
-  if (!el) return;
+  if (!el || el === document.body) return;
   const rect = el.getBoundingClientRect();
   const tooltipSpace = 280;
   const needsScroll = rect.bottom > window.innerHeight - tooltipSpace
@@ -165,10 +218,24 @@ function scrollTargetIntoView(el, reducedMotion) {
   }
 }
 
-function buildVisibleSteps() {
-  return TOUR_STEP_DEFS.filter((step) => {
-    const matches = document.querySelectorAll(step.target);
-    return Array.from(matches).some(isElementVisible);
+function buildJoyrideSteps() {
+  return TOUR_STEP_DEFS.map((step) => {
+    const resolvedTarget = resolveTarget(step.target, step.fallbackTarget);
+    const el = resolvedTarget === 'body' ? document.body : document.querySelector(resolvedTarget);
+    const placement = getSmartPlacement(el, step.placement);
+    return {
+      ...step,
+      target: resolvedTarget,
+      placement,
+      disableBeacon: step.disableBeacon ?? true,
+      floaterProps: {
+        options: {
+          ...FLOATER_OPTIONS,
+          placement,
+          offset: step.offset ?? 12,
+        },
+      },
+    };
   });
 }
 
@@ -180,13 +247,14 @@ function TourTooltip({
   continuous,
   index,
   step,
-  backProps,
-  primaryProps,
   skipProps,
   tooltipProps,
   size,
   isLastStep,
   tooltipRef,
+  onNext,
+  onBack,
+  onSkip,
 }) {
   const titleId = useId();
   const descId = useId();
@@ -286,6 +354,10 @@ function TourTooltip({
             size="small"
             color="inherit"
             {...skipProps}
+            onClick={(e) => {
+              skipProps?.onClick?.(e);
+              onSkip();
+            }}
             aria-label="Skip tutorial"
             sx={{ minWidth: 0 }}
           >
@@ -296,7 +368,7 @@ function TourTooltip({
             <Button
               size="small"
               variant="outlined"
-              {...backProps}
+              onClick={onBack}
               aria-label={`Go back to step ${index}`}
             >
               Back
@@ -307,7 +379,7 @@ function TourTooltip({
               size="small"
               variant="contained"
               color="secondary"
-              {...primaryProps}
+              onClick={onNext}
               aria-label={isLastStep ? 'Finish tutorial' : `Continue to step ${index + 2}`}
               sx={{ minWidth: 72, fontWeight: 700 }}
             >
@@ -327,13 +399,18 @@ export default function ProductTour() {
   const location = useLocation();
   const { announce } = useLiveRegion();
   const [ready, setReady] = useState(false);
-  const [activeSteps, setActiveSteps] = useState([]);
+  const [joyrideSteps, setJoyrideSteps] = useState([]);
   const [reducedMotion, setReducedMotion] = useState(false);
   const tooltipRef = useRef(null);
   const prevFocusRef = useRef(null);
+  const skipGuardRef = useRef(0);
 
   useEffect(() => {
     setReducedMotion(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }, []);
+
+  const refreshSteps = useCallback(() => {
+    setJoyrideSteps(buildJoyrideSteps());
   }, []);
 
   useEffect(() => {
@@ -348,49 +425,66 @@ export default function ProductTour() {
     }
 
     const timer = setTimeout(() => {
-      const visible = buildVisibleSteps();
-      if (visible.length === 0) {
-        pauseTour();
-        return;
-      }
-      setActiveSteps(visible);
-      setStep((current) => (current >= visible.length ? 0 : current));
+      refreshSteps();
+      setStep((current) => (current >= TOUR_STEP_DEFS.length ? 0 : current));
       setReady(true);
       prevFocusRef.current = document.activeElement;
       announce('Interactive tutorial started. Press Escape to skip.', 'polite');
     }, reducedMotion ? 80 : 300);
 
-    return () => clearTimeout(timer);
-  }, [open, location.pathname, pauseTour, reducedMotion, setStep, announce]);
+    const domTimer = setTimeout(refreshSteps, 1500);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(domTimer);
+    };
+  }, [open, location.pathname, pauseTour, reducedMotion, setStep, announce, refreshSteps]);
 
   useEffect(() => {
-    if (!open || !ready || !activeSteps[step]) return undefined;
-    const current = activeSteps[step];
-    const el = document.querySelector(current.target);
-    if (current.focusTarget && el) {
-      el.focus();
-    }
+    if (!open || !ready) return undefined;
+    refreshSteps();
+    const domTimer = setInterval(() => {
+      if (document.querySelector('[data-tour="tile-grid"]')) {
+        refreshSteps();
+        clearInterval(domTimer);
+      }
+    }, 200);
+    return () => clearInterval(domTimer);
+  }, [open, ready, refreshSteps]);
+
+  useEffect(() => {
+    if (!open || !ready) return undefined;
+    refreshSteps();
+  }, [step, open, ready, refreshSteps]);
+
+  useEffect(() => {
+    if (!open || !ready || !joyrideSteps[step]) return undefined;
+    const current = joyrideSteps[step];
+    const el = current.target === 'body' ? document.body : document.querySelector(current.target);
     const t = setTimeout(() => scrollTargetIntoView(el, reducedMotion), 100);
-    announce(buildStepAnnouncement(current, step, activeSteps.length), 'polite');
+    announce(buildStepAnnouncement(current, step, joyrideSteps.length), 'polite');
     const focusT = setTimeout(() => tooltipRef.current?.focus(), 200);
     return () => {
       clearTimeout(t);
       clearTimeout(focusT);
     };
-  }, [open, ready, step, activeSteps, reducedMotion, announce]);
+  }, [open, ready, step, joyrideSteps, reducedMotion, announce]);
 
   const goNext = useCallback(() => {
-    if (step >= activeSteps.length - 1) {
-      announce('Tutorial complete.', 'polite');
-      completeTour();
-    } else {
-      setStep(step + 1);
-    }
-  }, [step, activeSteps.length, completeTour, setStep, announce]);
+    setStep((current) => {
+      if (current >= joyrideSteps.length - 1) {
+        announce('Tutorial complete.', 'polite');
+        completeTour();
+        prevFocusRef.current?.focus?.();
+        return 0;
+      }
+      return current + 1;
+    });
+  }, [joyrideSteps.length, completeTour, setStep, announce]);
 
   const goBack = useCallback(() => {
-    if (step > 0) setStep(step - 1);
-  }, [step, setStep]);
+    setStep((current) => (current > 0 ? current - 1 : current));
+  }, [setStep]);
 
   const handleSkip = useCallback(() => {
     announce('Tutorial skipped.', 'polite');
@@ -440,9 +534,7 @@ export default function ProductTour() {
   }), []);
 
   const handleCallback = useCallback((data) => {
-    const {
-      action, index, status, type, step: stepData,
-    } = data;
+    const { action, index, status, type } = data;
 
     if (status === STATUS.FINISHED) {
       announce('Tutorial complete.', 'polite');
@@ -457,70 +549,66 @@ export default function ProductTour() {
     }
 
     if (type === EVENTS.TARGET_NOT_FOUND) {
-      setStep((prev) => Math.min(prev + 1, activeSteps.length - 1));
+      const guard = skipGuardRef.current;
+      if (guard === index) return;
+      skipGuardRef.current = index;
+      setStep((prev) => {
+        if (prev >= joyrideSteps.length - 1) {
+          completeTour();
+          return 0;
+        }
+        return prev + 1;
+      });
       return;
     }
 
-    if (type === EVENTS.STEP_BEFORE) {
-      const el = typeof stepData?.target === 'string'
-        ? document.querySelector(stepData.target)
-        : stepData?.target;
-      if (stepData?.focusTarget && el) el.focus();
-      scrollTargetIntoView(el, reducedMotion);
-    }
-
     if (type === EVENTS.STEP_AFTER) {
+      skipGuardRef.current = 0;
       if (action === ACTIONS.NEXT) {
-        if (index >= activeSteps.length - 1) {
+        if (index >= joyrideSteps.length - 1) {
           completeTour();
         } else {
           setStep(index + 1);
         }
       } else if (action === ACTIONS.PREV) {
-        setStep(index - 1);
+        setStep(Math.max(0, index - 1));
       }
     }
-  }, [completeTour, setStep, handleSkip, reducedMotion, announce, activeSteps.length]);
+  }, [completeTour, setStep, handleSkip, announce, joyrideSteps.length]);
 
-  const stepsWithPlacement = useMemo(() => activeSteps.map((s) => {
-    const el = document.querySelector(s.target);
-    const placement = getSmartPlacement(el, s.placement);
-    return {
-      ...s,
-      placement,
-      floaterProps: {
-        options: {
-          ...FLOATER_OPTIONS,
-          placement,
-          offset: s.offset ?? 12,
-        },
-      },
-    };
-  }), [activeSteps, step]);
+  const TooltipWithHandlers = useCallback((props) => (
+    <TourTooltip
+      {...props}
+      tooltipRef={tooltipRef}
+      onNext={goNext}
+      onBack={goBack}
+      onSkip={handleSkip}
+    />
+  ), [goNext, goBack, handleSkip]);
 
-  const TooltipWithRef = useCallback((props) => (
-    <TourTooltip {...props} tooltipRef={tooltipRef} />
-  ), []);
-
-  if (!open || !ready || activeSteps.length === 0) {
+  if (!open || !ready || joyrideSteps.length === 0) {
     return null;
   }
 
+  const safeStep = Math.min(step, joyrideSteps.length - 1);
+
   return (
     <Joyride
-      steps={stepsWithPlacement}
+      key={`tour-${joyrideSteps.length}`}
+      steps={joyrideSteps}
       run={open && ready}
-      stepIndex={step}
+      stepIndex={safeStep}
       continuous
       showProgress={false}
       showSkipButton={false}
       disableOverlayClose
       disableCloseOnEsc
       spotlightClicks={false}
-      scrollToFirstStep={false}
+      scrollToFirstStep
+      disableScrolling={false}
       scrollOffset={100}
       spotlightPadding={8}
-      tooltipComponent={TooltipWithRef}
+      tooltipComponent={TooltipWithHandlers}
       floaterProps={{
         disableAnimation: reducedMotion,
         options: FLOATER_OPTIONS,

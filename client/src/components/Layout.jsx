@@ -582,7 +582,7 @@ export default function Layout({ children }) {
 
           ) : (
 
-            <>
+            <Box data-tour="login-register" sx={{ display: 'flex', alignItems: 'center' }}>
 
               <ClickableTooltip title={getRouteTooltip('/login')} to="/login" clickable={false}>
 
@@ -650,7 +650,7 @@ export default function Layout({ children }) {
 
               </ClickableTooltip>
 
-            </>
+            </Box>
 
           )}
 
