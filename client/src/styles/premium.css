@@ -1,0 +1,135 @@
+/**
+ * Global premium polish — smooth motion, refined surfaces, cohesive feel.
+ */
+
+:root {
+  --vu-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --vu-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --vu-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --vu-shadow-sm: 0 2px 8px rgba(0, 51, 102, 0.06);
+  --vu-shadow-md: 0 8px 24px rgba(0, 51, 102, 0.1);
+  --vu-shadow-lg: 0 16px 48px rgba(0, 51, 102, 0.14);
+  --vu-shadow-gold: 0 8px 32px rgba(212, 175, 55, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
+  color: #002244;
+}
+
+/* Smoother route transitions */
+.vu-route-fade {
+  animation: vuPremiumFadeIn 0.4s var(--vu-ease-out) both;
+}
+
+@keyframes vuPremiumFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Premium card hover lift */
+.vu-premium-card {
+  transition:
+    transform 0.35s var(--vu-ease-out),
+    box-shadow 0.35s var(--vu-ease-out),
+    border-color 0.25s var(--vu-ease-smooth);
+}
+
+.vu-premium-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--vu-shadow-md);
+}
+
+/* Glass surface for panels */
+.vu-glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Shimmer on premium buttons */
+.vu-btn-premium {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s var(--vu-ease-out), box-shadow 0.3s var(--vu-ease-out);
+}
+
+.vu-btn-premium:hover {
+  transform: translateY(-1px);
+}
+
+.vu-btn-premium::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: left 0.5s var(--vu-ease-out);
+}
+
+.vu-btn-premium:hover::after {
+  left: 120%;
+}
+
+/* Page hero entrance */
+.vu-page-enter {
+  animation: vuPremiumFadeIn 0.55s var(--vu-ease-out) both;
+}
+
+/* Smooth scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 51, 102, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 51, 102, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vu-route-fade,
+  .vu-page-enter,
+  .vu-premium-card:hover,
+  .vu-btn-premium:hover {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .vu-btn-premium::after {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "health-c25-n250",
+  "url": "http://127.0.0.1:5000/api/health",
+  "concurrency": 25,
+  "totalRequests": 250,
+  "success": 99,
+  "errors": 151,
+  "statuses": {
+    "200": 99,
+    "429": 151
+  },
+  "latencyMs": {
+    "min": 3,
+    "mean": 19,
+    "p50": 16,
+    "p95": 47,
+    "max": 72
+  },
+  "timestamp": "2026-08-27T07:22:59.095Z",
+  "tool": "node-http-wave-load (JMeter-equivalent smoke; not Apache JMeter GUI)"
+}

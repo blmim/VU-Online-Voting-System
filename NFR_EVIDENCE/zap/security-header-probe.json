@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-08-27T07:22:59.619Z",
+  "tool": "custom-security-header-probe (pre-ZAP / ZAP-alternative when ZAP not installed)",
+  "scope": "localhost Capstone demo — not a full OWASP ZAP spider",
+  "findings": [
+    {
+      "url": "http://127.0.0.1:5000/api/health",
+      "status": 429,
+      "ok": true,
+      "error": null,
+      "securityHeaders": {
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "referrer-policy": "no-referrer",
+        "permissions-policy": null,
+        "access-control-allow-origin": "http://localhost:5173"
+      },
+      "notes": [
+        "Localhost HTTP — HSTS N/A until HTTPS deploy"
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5000/api/docs",
+      "status": 429,
+      "ok": true,
+      "error": null,
+      "securityHeaders": {
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "referrer-policy": "no-referrer",
+        "permissions-policy": null,
+        "access-control-allow-origin": "http://localhost:5173"
+      },
+      "notes": [
+        "Localhost HTTP — HSTS N/A until HTTPS deploy"
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/",
+      "status": 200,
+      "ok": true,
+      "error": null,
+      "securityHeaders": {
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "x-frame-options": null,
+        "strict-transport-security": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "access-control-allow-origin": null
+      },
+      "notes": [
+        "Missing X-Content-Type-Options",
+        "No X-Frame-Options / CSP frame ancestor",
+        "Localhost HTTP — HSTS N/A until HTTPS deploy"
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/login",
+      "status": 200,
+      "ok": true,
+      "error": null,
+      "securityHeaders": {
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "x-frame-options": null,
+        "strict-transport-security": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "access-control-allow-origin": null
+      },
+      "notes": [
+        "Missing X-Content-Type-Options",
+        "No X-Frame-Options / CSP frame ancestor",
+        "Localhost HTTP — HSTS N/A until HTTPS deploy"
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5173/register",
+      "status": 200,
+      "ok": true,
+      "error": null,
+      "securityHeaders": {
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "x-frame-options": null,
+        "strict-transport-security": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "access-control-allow-origin": null
+      },
+      "notes": [
+        "Missing X-Content-Type-Options",
+        "No X-Frame-Options / CSP frame ancestor",
+        "Localhost HTTP — HSTS N/A until HTTPS deploy"
+      ]
+    }
+  ]
+}

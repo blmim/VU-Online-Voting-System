@@ -1,0 +1,884 @@
+{
+  "tool": "playwright + @axe-core/playwright",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa"
+  ],
+  "baseUrl": "http://127.0.0.1:5173",
+  "scannedAt": "2026-08-26T03:18:27.899Z",
+  "browser": "Google Chrome (channel=chrome, system install)",
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "url": "http://127.0.0.1:5173/",
+      "ok": true,
+      "error": null,
+      "violationCount": 0,
+      "violationNodeCount": 0,
+      "passes": 19,
+      "incomplete": 1,
+      "inapplicable": 43,
+      "violations": [],
+      "violationSummary": {}
+    },
+    {
+      "id": "login-portal",
+      "path": "/login",
+      "url": "http://127.0.0.1:5173/login",
+      "ok": true,
+      "error": null,
+      "violationCount": 0,
+      "violationNodeCount": 0,
+      "passes": 21,
+      "incomplete": 1,
+      "inapplicable": 41,
+      "violations": [],
+      "violationSummary": {}
+    },
+    {
+      "id": "login-student",
+      "path": "/login/student",
+      "url": "http://127.0.0.1:5173/login/student",
+      "ok": true,
+      "error": null,
+      "violationCount": 0,
+      "violationNodeCount": 0,
+      "passes": 26,
+      "incomplete": 1,
+      "inapplicable": 36,
+      "violations": [],
+      "violationSummary": {}
+    },
+    {
+      "id": "register",
+      "path": "/register",
+      "url": "http://127.0.0.1:5173/register",
+      "ok": true,
+      "error": null,
+      "violationCount": 0,
+      "violationNodeCount": 0,
+      "passes": 25,
+      "incomplete": 3,
+      "inapplicable": 37,
+      "violations": [],
+      "violationSummary": {}
+    },
+    {
+      "id": "help",
+      "path": "/help",
+      "url": "http://127.0.0.1:5173/help",
+      "ok": true,
+      "error": null,
+      "violationCount": 0,
+      "violationNodeCount": 0,
+      "passes": 22,
+      "incomplete": 1,
+      "inapplicable": 40,
+      "violations": [],
+      "violationSummary": {}
+    },
+    {
+      "id": "about",
+      "path": "/about",
+      "url": "http://127.0.0.1:5173/about",
+      "ok": true,
+      "error": null,
+      "violationCount": 0,
+      "violationNodeCount": 0,
+      "passes": 21,
+      "incomplete": 1,
+      "inapplicable": 41,
+      "violations": [],
+      "violationSummary": {}
+    }
+  ],
+  "totals": {
+    "pagesAttempted": 6,
+    "pagesOk": 6,
+    "totalViolations": 0,
+    "totalViolationNodes": 0
+  },
+  "rawByPage": {
+    "home": {
+      "url": "http://127.0.0.1:5173/",
+      "timestamp": "2026-08-26T03:18:37.205Z",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.13.0"
+      },
+      "testRunner": {
+        "name": "axe"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "windowWidth": 1280,
+        "windowHeight": 720,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "toolOptions": {
+        "runOnly": {
+          "type": "tag",
+          "values": [
+            "wcag2a",
+            "wcag2aa",
+            "wcag21a",
+            "wcag21aa"
+          ]
+        },
+        "reporter": "v1"
+      },
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-conditional-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-deprecated-role",
+          "nodes": 2
+        },
+        {
+          "id": "aria-hidden-body",
+          "nodes": 1
+        },
+        {
+          "id": "aria-hidden-focus",
+          "nodes": 8
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-required-attr",
+          "nodes": 2
+        },
+        {
+          "id": "aria-roles",
+          "nodes": 2
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 6
+        },
+        {
+          "id": "aria-valid-attr",
+          "nodes": 6
+        },
+        {
+          "id": "bypass",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "document-title",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "nodes": 1
+        },
+        {
+          "id": "html-lang-valid",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "nodes": 7
+        },
+        {
+          "id": "link-name",
+          "nodes": 30
+        },
+        {
+          "id": "meta-viewport",
+          "nodes": 1
+        },
+        {
+          "id": "nested-interactive",
+          "nodes": 8
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 61
+        }
+      ]
+    },
+    "login-portal": {
+      "url": "http://127.0.0.1:5173/login",
+      "timestamp": "2026-08-26T03:19:04.024Z",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.13.0"
+      },
+      "testRunner": {
+        "name": "axe"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "windowWidth": 1280,
+        "windowHeight": 720,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "toolOptions": {
+        "runOnly": {
+          "type": "tag",
+          "values": [
+            "wcag2a",
+            "wcag2aa",
+            "wcag21a",
+            "wcag21aa"
+          ]
+        },
+        "reporter": "v1"
+      },
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-conditional-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-deprecated-role",
+          "nodes": 2
+        },
+        {
+          "id": "aria-hidden-body",
+          "nodes": 1
+        },
+        {
+          "id": "aria-hidden-focus",
+          "nodes": 3
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-required-attr",
+          "nodes": 2
+        },
+        {
+          "id": "aria-roles",
+          "nodes": 2
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 3
+        },
+        {
+          "id": "aria-valid-attr",
+          "nodes": 3
+        },
+        {
+          "id": "bypass",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "document-title",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "nodes": 1
+        },
+        {
+          "id": "html-lang-valid",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "nodes": 3
+        },
+        {
+          "id": "link-name",
+          "nodes": 25
+        },
+        {
+          "id": "list",
+          "nodes": 1
+        },
+        {
+          "id": "listitem",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "nodes": 1
+        },
+        {
+          "id": "nested-interactive",
+          "nodes": 4
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 38
+        }
+      ]
+    },
+    "login-student": {
+      "url": "http://127.0.0.1:5173/login/student",
+      "timestamp": "2026-08-26T03:19:18.461Z",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.13.0"
+      },
+      "testRunner": {
+        "name": "axe"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "windowWidth": 1280,
+        "windowHeight": 720,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "toolOptions": {
+        "runOnly": {
+          "type": "tag",
+          "values": [
+            "wcag2a",
+            "wcag2aa",
+            "wcag21a",
+            "wcag21aa"
+          ]
+        },
+        "reporter": "v1"
+      },
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-conditional-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-deprecated-role",
+          "nodes": 2
+        },
+        {
+          "id": "aria-hidden-body",
+          "nodes": 1
+        },
+        {
+          "id": "aria-hidden-focus",
+          "nodes": 9
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-required-attr",
+          "nodes": 2
+        },
+        {
+          "id": "aria-roles",
+          "nodes": 2
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 6
+        },
+        {
+          "id": "aria-valid-attr",
+          "nodes": 6
+        },
+        {
+          "id": "autocomplete-valid",
+          "nodes": 1
+        },
+        {
+          "id": "button-name",
+          "nodes": 2
+        },
+        {
+          "id": "bypass",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        },
+        {
+          "id": "document-title",
+          "nodes": 1
+        },
+        {
+          "id": "duplicate-id-aria",
+          "nodes": 2
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "nodes": 1
+        },
+        {
+          "id": "html-lang-valid",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "nodes": 3
+        },
+        {
+          "id": "label",
+          "nodes": 4
+        },
+        {
+          "id": "link-name",
+          "nodes": 25
+        },
+        {
+          "id": "list",
+          "nodes": 1
+        },
+        {
+          "id": "listitem",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "nodes": 1
+        },
+        {
+          "id": "nested-interactive",
+          "nodes": 9
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 37
+        }
+      ]
+    },
+    "register": {
+      "url": "http://127.0.0.1:5173/register",
+      "timestamp": "2026-08-26T03:19:33.733Z",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.13.0"
+      },
+      "testRunner": {
+        "name": "axe"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "windowWidth": 1280,
+        "windowHeight": 720,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "toolOptions": {
+        "runOnly": {
+          "type": "tag",
+          "values": [
+            "wcag2a",
+            "wcag2aa",
+            "wcag21a",
+            "wcag21aa"
+          ]
+        },
+        "reporter": "v1"
+      },
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "nodes": 7
+        },
+        {
+          "id": "aria-conditional-attr",
+          "nodes": 7
+        },
+        {
+          "id": "aria-deprecated-role",
+          "nodes": 2
+        },
+        {
+          "id": "aria-hidden-body",
+          "nodes": 1
+        },
+        {
+          "id": "aria-hidden-focus",
+          "nodes": 10
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 6
+        },
+        {
+          "id": "aria-required-attr",
+          "nodes": 2
+        },
+        {
+          "id": "aria-roles",
+          "nodes": 2
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 5
+        },
+        {
+          "id": "aria-valid-attr",
+          "nodes": 7
+        },
+        {
+          "id": "button-name",
+          "nodes": 1
+        },
+        {
+          "id": "bypass",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        },
+        {
+          "id": "document-title",
+          "nodes": 1
+        },
+        {
+          "id": "duplicate-id-aria",
+          "nodes": 5
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "nodes": 3
+        },
+        {
+          "id": "html-has-lang",
+          "nodes": 1
+        },
+        {
+          "id": "html-lang-valid",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "nodes": 3
+        },
+        {
+          "id": "label",
+          "nodes": 3
+        },
+        {
+          "id": "link-name",
+          "nodes": 22
+        },
+        {
+          "id": "list",
+          "nodes": 1
+        },
+        {
+          "id": "listitem",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "nodes": 1
+        },
+        {
+          "id": "nested-interactive",
+          "nodes": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 2
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 40
+        }
+      ]
+    },
+    "help": {
+      "url": "http://127.0.0.1:5173/help",
+      "timestamp": "2026-08-26T03:20:01.057Z",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.13.0"
+      },
+      "testRunner": {
+        "name": "axe"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "windowWidth": 1280,
+        "windowHeight": 720,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "toolOptions": {
+        "runOnly": {
+          "type": "tag",
+          "values": [
+            "wcag2a",
+            "wcag2aa",
+            "wcag21a",
+            "wcag21aa"
+          ]
+        },
+        "reporter": "v1"
+      },
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-conditional-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-deprecated-role",
+          "nodes": 3
+        },
+        {
+          "id": "aria-hidden-body",
+          "nodes": 1
+        },
+        {
+          "id": "aria-hidden-focus",
+          "nodes": 2
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-required-attr",
+          "nodes": 3
+        },
+        {
+          "id": "aria-roles",
+          "nodes": 3
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 3
+        },
+        {
+          "id": "aria-valid-attr",
+          "nodes": 3
+        },
+        {
+          "id": "bypass",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 24
+        },
+        {
+          "id": "document-title",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "nodes": 1
+        },
+        {
+          "id": "html-lang-valid",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "nodes": 3
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 2
+        },
+        {
+          "id": "link-name",
+          "nodes": 24
+        },
+        {
+          "id": "list",
+          "nodes": 2
+        },
+        {
+          "id": "listitem",
+          "nodes": 8
+        },
+        {
+          "id": "meta-viewport",
+          "nodes": 1
+        },
+        {
+          "id": "nested-interactive",
+          "nodes": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 34
+        }
+      ]
+    },
+    "about": {
+      "url": "http://127.0.0.1:5173/about",
+      "timestamp": "2026-08-26T03:20:08.823Z",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.13.0"
+      },
+      "testRunner": {
+        "name": "axe"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "windowWidth": 1280,
+        "windowHeight": 720,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "toolOptions": {
+        "runOnly": {
+          "type": "tag",
+          "values": [
+            "wcag2a",
+            "wcag2aa",
+            "wcag21a",
+            "wcag21aa"
+          ]
+        },
+        "reporter": "v1"
+      },
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-allowed-attr",
+          "nodes": 7
+        },
+        {
+          "id": "aria-conditional-attr",
+          "nodes": 7
+        },
+        {
+          "id": "aria-deprecated-role",
+          "nodes": 2
+        },
+        {
+          "id": "aria-hidden-body",
+          "nodes": 1
+        },
+        {
+          "id": "aria-hidden-focus",
+          "nodes": 8
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 7
+        },
+        {
+          "id": "aria-required-attr",
+          "nodes": 2
+        },
+        {
+          "id": "aria-roles",
+          "nodes": 2
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": 7
+        },
+        {
+          "id": "aria-valid-attr",
+          "nodes": 7
+        },
+        {
+          "id": "bypass",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 18
+        },
+        {
+          "id": "document-title",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "nodes": 1
+        },
+        {
+          "id": "html-lang-valid",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "nodes": 7
+        },
+        {
+          "id": "link-name",
+          "nodes": 27
+        },
+        {
+          "id": "list",
+          "nodes": 1
+        },
+        {
+          "id": "listitem",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "nodes": 1
+        },
+        {
+          "id": "nested-interactive",
+          "nodes": 9
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 55
+        }
+      ]
+    }
+  }
+}

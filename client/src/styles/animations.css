@@ -1,0 +1,232 @@
+/* VU Online Voting — motion & championship animations */
+@keyframes tileSlideIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes barFill {
+  from { width: 0; }
+}
+
+@keyframes championPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5); }
+  50% { box-shadow: 0 0 24px 8px rgba(212, 175, 55, 0.35); }
+}
+
+@keyframes crownBounce {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-6px) rotate(5deg); }
+}
+
+@keyframes confettiFall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(60px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes lineDraw {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes vuFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes breadcrumbFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes logoPupilGlow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(212, 175, 55, 0.3)); }
+  50% { filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6)); }
+}
+
+@keyframes logoBlink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+/* Route fade handled in premium.css for smoother easing */
+
+.vu-breadcrumb-fade {
+  animation: breadcrumbFadeIn 0.35s ease;
+}
+
+.vu-logo-pupil {
+  animation: logoPupilGlow 3s ease-in-out infinite;
+}
+
+.vu-logo-eye:hover .vu-logo-pupil {
+  animation: logoPupilGlow 1.5s ease-in-out infinite;
+}
+
+.vu-tile-animate {
+  animation: tileSlideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.vu-shimmer {
+  background: linear-gradient(90deg, #e8ecf0 25%, #f5f7fa 50%, #e8ecf0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.vu-champion-pulse {
+  animation: championPulse 2s ease-in-out infinite;
+}
+
+.vu-crown-bounce {
+  animation: crownBounce 1.2s ease-in-out infinite;
+}
+
+.vu-hero-animated {
+  background-size: 200% 200%;
+  animation: heroGradient 8s ease infinite;
+}
+
+/* Championship hero arena — floating candidate portraits */
+@keyframes arenaFloatLeft {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(1deg); }
+}
+
+@keyframes arenaFloatRight {
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50% { transform: translateY(-14px) rotate(-1deg); }
+}
+
+@keyframes arenaGlowRing {
+  0%, 100% { background-position: 0% 50%; filter: brightness(1); }
+  50% { background-position: 100% 50%; filter: brightness(1.15); }
+}
+
+@keyframes arenaScanLine {
+  0% { top: -20%; opacity: 0; }
+  15% { opacity: 0.5; }
+  100% { top: 120%; opacity: 0; }
+}
+
+@keyframes arenaSpotlightPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.vu-arena-float-left {
+  animation: arenaFloatLeft 4s ease-in-out infinite;
+}
+
+.vu-arena-float-right {
+  animation: arenaFloatRight 4.5s ease-in-out infinite;
+}
+
+.vu-arena-glow {
+  animation: arenaGlowRing 3s ease-in-out infinite;
+}
+
+.vu-arena-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(212, 175, 55, 0.25),
+    transparent
+  );
+  animation: arenaScanLine 3.5s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.vu-arena-spotlight-left,
+.vu-arena-spotlight-right {
+  animation: arenaSpotlightPulse 5s ease-in-out infinite;
+}
+
+.vu-bar-fill {
+  animation: barFill 1s ease-out forwards;
+}
+
+/* Enhanced accessibility mode */
+body.vu-a11y-enhanced *:focus-visible {
+  outline: 3px solid #D4AF37 !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.25) !important;
+}
+
+body.vu-a11y-enhanced {
+  --vu-focus-ring: 3px;
+  font-size: 105%;
+  letter-spacing: 0.01em;
+}
+
+body.vu-a11y-enhanced a:not(.MuiButton-root) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body.vu-a11y-enhanced .MuiButton-root,
+body.vu-a11y-enhanced .MuiIconButton-root {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+body.vu-a11y-enhanced .MuiChip-root {
+  min-height: 32px;
+  font-size: 0.85rem;
+}
+
+body.vu-a11y-enhanced .MuiTooltip-tooltip {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 360px;
+}
+
+body.vu-a11y-enhanced .vu-route-fade,
+body.vu-a11y-enhanced .vu-page-enter,
+body.vu-a11y-enhanced .vu-tile-animate {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vu-tile-animate,
+  .vu-shimmer,
+  .vu-champion-pulse,
+  .vu-crown-bounce,
+  .vu-hero-animated,
+  .vu-bar-fill,
+  .vu-logo-pupil,
+  .vu-breadcrumb-fade,
+  .vu-arena-float-left,
+  .vu-arena-float-right,
+  .vu-arena-glow,
+  .vu-arena-scan,
+  .vu-arena-spotlight-left,
+  .vu-arena-spotlight-right {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  .vu-route-fade {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "help.report.json",
+    "url": "http://127.0.0.1:5173/help",
+    "performance": 0.41,
+    "accessibility": 0.98,
+    "bestPractices": 0.96,
+    "seo": 0.88
+  },
+  {
+    "file": "home.report.json",
+    "url": "http://127.0.0.1:5173/",
+    "performance": 0.32,
+    "accessibility": 0.98,
+    "bestPractices": 0.96,
+    "seo": 0.89
+  },
+  {
+    "file": "live.report.json",
+    "url": "http://127.0.0.1:5173/live",
+    "performance": 0.1,
+    "accessibility": 0.98,
+    "bestPractices": 0.96,
+    "seo": 0.88
+  },
+  {
+    "file": "login.report.json",
+    "url": "http://127.0.0.1:5173/login",
+    "performance": 0.42,
+    "accessibility": 0.98,
+    "bestPractices": 0.96,
+    "seo": 0.89
+  },
+  {
+    "file": "register.report.json",
+    "url": "http://127.0.0.1:5173/register",
+    "performance": 0.39,
+    "accessibility": 0.98,
+    "bestPractices": 0.96,
+    "seo": 0.89
+  }
+]

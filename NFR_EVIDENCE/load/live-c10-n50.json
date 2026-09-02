@@ -1,0 +1,20 @@
+{
+  "name": "live-c10-n50",
+  "url": "http://127.0.0.1:5173/live",
+  "concurrency": 10,
+  "totalRequests": 50,
+  "success": 50,
+  "errors": 0,
+  "statuses": {
+    "200": 50
+  },
+  "latencyMs": {
+    "min": 40,
+    "mean": 55,
+    "p50": 54,
+    "p95": 67,
+    "max": 70
+  },
+  "timestamp": "2026-08-27T07:22:59.591Z",
+  "tool": "node-http-wave-load (JMeter-equivalent smoke; not Apache JMeter GUI)"
+}
