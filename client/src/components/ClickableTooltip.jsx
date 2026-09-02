@@ -1,5 +1,16 @@
+import { forwardRef } from 'react';
 import { Box, Tooltip } from '@mui/material';
 import { getRouteTooltip } from '../constants/routeTooltips';
+
+const TooltipWrapper = forwardRef(function TooltipWrapper({
+  sx, children, ...rest
+}, ref) {
+  return (
+    <Box ref={ref} component="span" sx={sx} {...rest}>
+      {children}
+    </Box>
+  );
+});
 
 /**
  * Wraps interactive elements with a hover tooltip and click affordance.
@@ -43,9 +54,9 @@ export default function ClickableTooltip({
   };
 
   const wrapped = (
-    <Box component="span" sx={wrapperSx}>
+    <TooltipWrapper sx={wrapperSx}>
       {children}
-    </Box>
+    </TooltipWrapper>
   );
 
   if (!resolvedTitle || disabled || disableTooltip) {
@@ -59,6 +70,7 @@ export default function ClickableTooltip({
       placement={placement}
       enterDelay={400}
       enterNextDelay={200}
+      PopperProps={{ sx: { zIndex: 14000 } }}
       {...tooltipProps}
     >
       {wrapped}

@@ -475,7 +475,10 @@ export default function Layout({ children }) {
 
 
 
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', flex: 1, justifyContent: 'center', flexWrap: 'wrap', gap: 0.25 }}>
+          <Box
+            data-tour="main-nav"
+            sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', flex: 1, justifyContent: 'center', flexWrap: 'wrap', gap: 0.25 }}
+          >
 
             {navLinks.map((item) => (
 
@@ -529,7 +532,7 @@ export default function Layout({ children }) {
 
               aria-label="Start tutorial"
 
-              data-tour="tutorial-replay"
+              data-tour="tutorial-nav"
 
               sx={{
 

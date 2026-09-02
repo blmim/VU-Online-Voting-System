@@ -1,10 +1,11 @@
 import { Link as RouterLink } from 'react-router-dom';
-import { Box, Chip, Typography } from '@mui/material';
+import { Box, Chip, Tooltip, Typography } from '@mui/material';
 import { VU_GOLD, VU_NAVY } from '../theme';
 
 export default function MetroTile({
   title,
   subtitle,
+  tooltip,
   icon,
   to,
   onClick,
@@ -17,6 +18,7 @@ export default function MetroTile({
 }) {
   const isLarge = size === 'large';
   const isWide = size === 'wide';
+  const tooltipText = tooltip || (subtitle ? `${title} — ${subtitle}` : title);
 
   const sx = {
     animationDelay: `${delay}ms`,
@@ -119,8 +121,9 @@ export default function MetroTile({
     </>
   );
 
+  let tile;
   if (to) {
-    return (
+    tile = (
       <Box
         component={RouterLink}
         to={to}
@@ -132,25 +135,40 @@ export default function MetroTile({
         {content}
       </Box>
     );
+  } else {
+    tile = (
+      <Box
+        component={onClick ? 'button' : 'div'}
+        type={onClick ? 'button' : undefined}
+        className="vu-tile-animate vu-premium-card"
+        sx={{
+          ...sx,
+          border: `1px solid ${accent}44`,
+          font: 'inherit',
+          textAlign: 'left',
+          width: '100%',
+        }}
+        onClick={onClick}
+        aria-label={subtitle ? `${title} — ${subtitle}` : title}
+        {...props}
+      >
+        {content}
+      </Box>
+    );
   }
 
+  if (!tooltipText) return tile;
+
   return (
-    <Box
-      component={onClick ? 'button' : 'div'}
-      type={onClick ? 'button' : undefined}
-      className="vu-tile-animate vu-premium-card"
-      sx={{
-        ...sx,
-        border: `1px solid ${accent}44`,
-        font: 'inherit',
-        textAlign: 'left',
-        width: '100%',
-      }}
-      onClick={onClick}
-      aria-label={subtitle ? `${title} — ${subtitle}` : title}
-      {...props}
+    <Tooltip
+      title={tooltipText}
+      arrow
+      placement="top"
+      enterDelay={350}
+      enterNextDelay={150}
+      PopperProps={{ sx: { zIndex: 14000 } }}
     >
-      {content}
-    </Box>
+      {tile}
+    </Tooltip>
   );
 }

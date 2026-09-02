@@ -21,7 +21,7 @@ const FLOATER_OPTIONS = {
   },
   flip: {
     enabled: true,
-    behavior: ['top', 'top-start', 'top-end', 'left', 'left-start', 'right', 'bottom'],
+    behavior: ['top', 'top-start', 'top-end', 'left', 'right', 'bottom'],
   },
 };
 
@@ -30,144 +30,98 @@ const TOUR_STEP_DEFS = [
     target: '[data-tour="home-hero"]',
     title: 'Welcome to VU Online Voting',
     summary: 'Your official, secure campus election portal.',
-    content: 'This system lets eligible VU students register, verify their identity with a one-time password, cast an official ballot, and confirm their vote with a receipt. Everything you see here is designed for transparency and auditability.',
-    accessibility: 'When you move between pages, a screen reader will hear the page name announced automatically. The highlighted area is the main hero banner on the Home page.',
-    keyboard: 'Press Tab to move through the page. Press Shift+Tab to go backwards.',
+    content: 'Register with your VU email, verify with a one-time password, cast your ballot, and confirm it with a receipt token. Everything here is designed for transparency and auditability.',
+    accessibility: 'Page changes are announced automatically for screen readers.',
+    keyboard: 'Press Tab to move through the page. Shift+Tab goes backwards.',
     placement: 'bottom',
     disableBeacon: true,
   },
   {
     target: '[data-tour="skip-to-content"]',
     title: 'Skip to Main Content',
-    summary: 'Keyboard and screen-reader users can bypass repetitive navigation.',
-    content: 'The first Tab stop on every page is a “Skip to main content” link. It jumps directly to the primary page area so you do not have to tab through the entire header and menu each time.',
-    accessibility: 'This link is visually hidden until focused, then appears in the top-left corner with a gold background. Screen readers will read it as the first focusable item.',
-    keyboard: 'Press Tab once after loading any page to reach this link, then Enter to activate it.',
+    summary: 'Jump past the header on any page.',
+    content: 'Press Tab once after loading a page to reach this link. It moves focus straight to the main content area.',
+    accessibility: 'Visually hidden until focused, then appears top-left with a gold background.',
+    keyboard: 'Tab once, then Enter to activate.',
     placement: 'bottom',
-    cornerTarget: true,
+    focusTarget: true,
   },
   {
     target: '[data-tour="tile-grid"]',
-    title: 'Home Dashboard Tiles',
-    summary: 'A visual command centre for every major feature.',
-    content: 'Each coloured tile is a shortcut — Vote, Elections, Live Results, Polls, Calendar, and more. Tiles show live badges such as how many elections are open. Hover or focus a tile to see a tooltip describing where it goes.',
-    accessibility: 'Tiles are links with descriptive labels. Your screen reader will announce the tile title, subtitle, and any badge text.',
-    keyboard: 'Use Tab to move between tiles. Press Enter or Space to open the selected tile.',
+    title: 'Home Dashboard',
+    summary: 'Shortcuts to every major feature.',
+    content: 'Each coloured tile opens a section — Vote, Elections, Live Results, Polls, Calendar, and more. Hover any tile to see a description tooltip. Badges show live counts like open elections.',
+    accessibility: 'Tiles are links with descriptive labels for screen readers.',
+    keyboard: 'Tab between tiles, then Enter or Space to open.',
     placement: 'top',
-  },
-  {
-    target: '[data-tour="tile-vote"]',
-    title: 'Cast Your Official Vote',
-    summary: 'Sign in required — this is where real ballots are submitted.',
-    content: 'After logging in with your VU email and OTP, open this tile to see your open ballots. Select candidates for each position, review your choices, and submit. You will receive a unique receipt token to verify your vote later.',
-    accessibility: 'The Vote tile is only visible when you are signed in. If you cannot see it, use Login or Register first.',
-    keyboard: 'Tab to this tile and press Enter. You will be taken to My Ballots.',
-    placement: 'right',
   },
   {
     target: '[data-tour="tile-elections"]',
     title: 'Browse Elections',
     summary: 'Search, filter, and open any campus election.',
-    content: 'View all elections — voting open, upcoming, or finished. Type in the search box to find elections or candidates by name. Each election opens a hub with live standings, candidate profiles, discussion, and AI insights.',
-    accessibility: 'Search results update as you type and are announced to screen readers. Filter tabs let you narrow results by election phase.',
-    keyboard: 'Open this tile, then use Tab to reach the search field. Arrow keys work inside dropdown results.',
+    content: 'View elections that are open, upcoming, or finished. Search by name or switch to the Candidates tab. Each election opens a hub with standings, profiles, and discussion.',
     placement: 'bottom',
   },
   {
-    target: '[data-tour="tile-polls"]',
-    title: 'Public Prediction Polls',
-    summary: 'Community opinions — not official votes.',
-    content: 'Polls let students share predictions and discuss outcomes. Results appear as bar charts with percentages. Poll votes are separate from official ballots and are clearly labelled as non-binding.',
-    accessibility: 'Poll options are radio buttons or buttons with clear labels. Results charts include text percentages alongside visual bars.',
-    placement: 'bottom',
+    target: '[data-tour="tile-vote"]',
+    title: 'Cast Your Vote',
+    summary: 'Sign in required — submit official ballots here.',
+    content: 'After logging in, open this tile to see open ballots. Select candidates, review your choices, and submit. You receive a receipt token to verify your vote later.',
+    accessibility: 'Only visible when signed in as a student voter.',
+    placement: 'right',
   },
   {
-    target: '[data-tour="tile-live-results"]',
-    title: 'Live Results & Scoreboard',
-    summary: 'Real-time vote counts with animated standings.',
-    content: 'Watch candidates compete on a championship-style scoreboard. Momentum bars, crown icons for leaders, and an interactive line chart show how voting trends change over time. Data refreshes automatically during active elections.',
-    accessibility: 'Live updates are announced politely when vote counts change. Chart data is also available in tabular form on the results page.',
-    placement: 'left',
-  },
-  {
-    target: '[data-tour="nav-elections"]',
-    title: 'Top Navigation — Elections',
-    summary: 'Reach Elections from any page.',
-    content: 'The navigation bar stays fixed at the top. The Elections link is always available and shows a tooltip on hover explaining its purpose. The current page is marked with aria-current for screen readers.',
-    accessibility: 'Navigation links include aria-labels describing their destination. The active page link is highlighted in gold.',
-    keyboard: 'Tab through the nav bar links. Press Enter to navigate.',
-    placement: 'bottom',
-  },
-  {
-    target: '[data-tour="nav-vote"]',
-    title: 'Top Navigation — Vote',
-    summary: 'Quick access to your ballots when signed in.',
-    content: 'This highlighted link takes you directly to My Ballots so you can cast or review your vote without returning to the home tiles.',
-    accessibility: 'Only visible when logged in as a student voter. The link is emphasised with a gold border so it stands out visually.',
-    placement: 'bottom',
-  },
-  {
-    target: '[data-tour="nav-dashboard"]',
-    title: 'Your Voter Dashboard',
-    summary: 'Track activity, profile, and voting history.',
-    content: 'The Dashboard shows your account summary, recent notifications, and quick links to ballots and candidate applications.',
-    accessibility: 'Dashboard cards use headings and landmarks so screen readers can jump between sections efficiently.',
+    target: '[data-tour="main-nav"]',
+    title: 'Top Navigation',
+    summary: 'Reach any section from every page.',
+    content: 'The nav bar stays fixed at the top. Hover a link to see where it goes. The current page is highlighted in gold.',
+    accessibility: 'Active page links use aria-current for screen readers.',
+    keyboard: 'Tab through links, Enter to navigate.',
     placement: 'bottom',
   },
   {
     target: '[data-tour="global-search"]',
-    title: 'Global Search (Ctrl+K)',
-    summary: 'Find elections, candidates, polls, and pages instantly.',
-    content: 'Open search from the magnifying-glass icon or press Ctrl+K (Cmd+K on Mac). Type a name or keyword — results are grouped by type. Recent searches are saved for quick access.',
-    accessibility: 'Search results are announced as they load. Each result row describes the item type, title, and destination.',
-    keyboard: 'Ctrl+K opens search. Arrow Up/Down moves through results. Enter selects. Escape closes.',
+    title: 'Global Search',
+    summary: 'Find elections, candidates, polls, and pages.',
+    content: 'Click the magnifying glass or press Ctrl+K (Cmd+K on Mac). Results are grouped by type and recent searches are saved.',
+    keyboard: 'Ctrl+K opens search. Arrow keys move through results. Enter selects. Escape closes.',
     placement: 'bottom',
   },
   {
     target: '[data-tour="help-chat"]',
-    title: 'Help Chat Assistant',
-    summary: 'AI-powered answers about voting and registration.',
-    content: 'Tap the floating chat button in the bottom-right corner to ask questions about OTP login, how to vote, verifying receipts, or running as a candidate. Suggested questions help you get started quickly.',
-    accessibility: 'The chat panel is a dialog with labelled input fields. Messages are readable by screen readers as they appear.',
-    keyboard: 'Tab to the chat button and press Enter. Type your question and press Enter again to send.',
+    title: 'Help Chat',
+    summary: 'AI answers about voting and registration.',
+    content: 'Tap the chat button in the bottom-right corner to ask about OTP login, casting votes, verifying receipts, or running as a candidate.',
     placement: 'top-start',
     offset: 16,
-    cornerTarget: true,
   },
   {
     target: '[data-tour="tile-verify"]',
-    title: 'Verify Your Voting Receipt',
-    summary: 'Confirm your ballot was recorded on the ledger.',
-    content: 'After voting you receive a receipt token. Paste it here to verify your vote was counted without revealing who you voted for. This proves the system recorded your ballot correctly.',
-    accessibility: 'The verification result is announced assertively — success or failure — so blind users know the outcome immediately.',
+    title: 'Verify Your Receipt',
+    summary: 'Confirm your ballot was recorded.',
+    content: 'After voting, paste your receipt token here to verify it was counted — without revealing who you voted for.',
     placement: 'top',
   },
   {
     target: '[data-tour="a11y-toggle"]',
-    title: 'Enhanced Accessibility Mode',
-    summary: 'Stronger focus rings, underlined links, and larger tap targets.',
-    content: 'Toggle this switch in the footer to enable enhanced accessibility. It adds gold focus outlines on every interactive element, underlines text links, enforces 44-pixel minimum button sizes, slightly increases text size, and disables decorative animations.',
-    accessibility: 'When toggled, a confirmation message is spoken aloud. The setting is saved in your browser for future visits.',
-    keyboard: 'Tab to the switch in the footer and press Space to toggle on or off.',
+    title: 'Accessibility Mode',
+    summary: 'Stronger focus rings and larger tap targets.',
+    content: 'Toggle this switch in the footer for gold focus outlines, underlined links, 44px minimum buttons, and reduced motion.',
     placement: 'top',
-    cornerTarget: true,
   },
   {
     target: '[data-tour="footer-links"]',
-    title: 'Footer Quick Links',
-    summary: 'Calendar, Help, Team, and more — always at the bottom.',
-    content: 'The footer repeats key links so you never have to scroll back to the top. Each link has a descriptive tooltip. You will also find the GitHub repository link and NFR compliance badges here.',
-    accessibility: 'Footer links use aria-labels matching their tooltips. The footer is a landmark region your screen reader can jump to directly.',
+    title: 'Footer Links',
+    summary: 'Calendar, Help, Team, and compliance badges.',
+    content: 'Key links repeat at the bottom so you never scroll back to the top. Hover any link for a description.',
     placement: 'top',
-    cornerTarget: true,
   },
   {
     target: '[data-tour="tutorial-replay"]',
     title: "You're All Set!",
-    summary: 'Explore, vote, and replay this tour anytime.',
-    content: 'You now know how to navigate the portal, cast a vote, check results, use search, enable accessibility enhancements, and get help. Tap the Tutorial button in the navigation bar whenever you want to see this guide again.',
-    accessibility: 'This tour can be restarted from the Tutorial button or the Tutorial tile on the home dashboard. All steps are keyboard-operable.',
-    keyboard: 'Escape skips the tour. Arrow Right or Enter goes to the next step. Arrow Left goes back.',
+    summary: 'Replay this tour anytime.',
+    content: 'Tap the Tutorial tile on the home dashboard or the Tutorial button in the nav bar to see this guide again.',
+    keyboard: 'Escape skips. Arrow Right or Enter goes forward. Arrow Left goes back.',
     placement: 'bottom',
   },
 ];
@@ -181,6 +135,7 @@ function isElementVisible(el) {
 }
 
 function getSmartPlacement(el, preferred) {
+  if (!el) return preferred;
   const rect = el.getBoundingClientRect();
   const nearBottom = rect.bottom > window.innerHeight - 140;
   const nearRight = rect.right > window.innerWidth - 160;
@@ -196,7 +151,7 @@ function getSmartPlacement(el, preferred) {
 function scrollTargetIntoView(el, reducedMotion) {
   if (!el) return;
   const rect = el.getBoundingClientRect();
-  const tooltipSpace = 320;
+  const tooltipSpace = 280;
   const needsScroll = rect.bottom > window.innerHeight - tooltipSpace
     || rect.top < 80
     || rect.right > window.innerWidth - 40;
@@ -211,36 +166,14 @@ function scrollTargetIntoView(el, reducedMotion) {
 }
 
 function buildVisibleSteps() {
-  return TOUR_STEP_DEFS.map((step) => {
+  return TOUR_STEP_DEFS.filter((step) => {
     const matches = document.querySelectorAll(step.target);
-    const visible = Array.from(matches).find(isElementVisible);
-    if (!visible) return null;
-
-    const placement = getSmartPlacement(visible, step.placement);
-
-    return {
-      ...step,
-      target: visible,
-      placement,
-      floaterProps: {
-        options: {
-          ...FLOATER_OPTIONS,
-          placement,
-          offset: step.offset ?? 12,
-        },
-      },
-    };
-  }).filter(Boolean);
+    return Array.from(matches).some(isElementVisible);
+  });
 }
 
 function buildStepAnnouncement(step, index, total) {
-  const parts = [
-    `Tutorial step ${index + 1} of ${total}.`,
-    step.title,
-    step.summary,
-  ];
-  if (step.accessibility) parts.push(`Accessibility tip: ${step.accessibility}`);
-  return parts.join(' ');
+  return `Tutorial step ${index + 1} of ${total}. ${step.title}. ${step.summary}`;
 }
 
 function TourTooltip({
@@ -289,7 +222,7 @@ function TourTooltip({
             Step {index + 1} of {size}
           </Typography>
           <Typography variant="caption" sx={{ opacity: 0.85 }}>
-            {Math.round(progress)}% complete
+            {Math.round(progress)}%
           </Typography>
         </Box>
         <LinearProgress
@@ -306,7 +239,7 @@ function TourTooltip({
         />
       </Box>
 
-      <Box id={descId} sx={{ px: 2, py: 2, maxHeight: 'min(50vh, 360px)', overflowY: 'auto' }}>
+      <Box id={descId} sx={{ px: 2, py: 2, maxHeight: 'min(45vh, 320px)', overflowY: 'auto' }}>
         <Typography variant="body2" fontWeight={700} color="primary" sx={{ mb: 1 }}>
           {step.summary}
         </Typography>
@@ -329,7 +262,7 @@ function TourTooltip({
             <AccessibilityNewIcon sx={{ color: VU_GOLD, fontSize: 20, mt: 0.2 }} aria-hidden />
             <Box>
               <Typography variant="caption" fontWeight={700} color="primary" display="block">
-                Screen reader &amp; accessibility
+                Accessibility
               </Typography>
               <Typography variant="caption" lineHeight={1.6} color="text.secondary">
                 {step.accessibility}
@@ -348,20 +281,12 @@ function TourTooltip({
           />
         )}
 
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: 1,
-            mt: 1,
-          }}
-        >
+        <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 1, mt: 1 }}>
           <Button
             size="small"
             color="inherit"
             {...skipProps}
-            aria-label="Skip tutorial and mark as completed"
+            aria-label="Skip tutorial"
             sx={{ minWidth: 0 }}
           >
             Skip tour
@@ -432,8 +357,8 @@ export default function ProductTour() {
       setStep((current) => (current >= visible.length ? 0 : current));
       setReady(true);
       prevFocusRef.current = document.activeElement;
-      announce('Interactive tutorial started. Use arrow keys to navigate steps, Escape to skip.', 'assertive');
-    }, reducedMotion ? 100 : 450);
+      announce('Interactive tutorial started. Press Escape to skip.', 'polite');
+    }, reducedMotion ? 80 : 300);
 
     return () => clearTimeout(timer);
   }, [open, location.pathname, pauseTour, reducedMotion, setStep, announce]);
@@ -441,11 +366,12 @@ export default function ProductTour() {
   useEffect(() => {
     if (!open || !ready || !activeSteps[step]) return undefined;
     const current = activeSteps[step];
-    const el = typeof current.target === 'string'
-      ? document.querySelector(current.target)
-      : current.target;
+    const el = document.querySelector(current.target);
+    if (current.focusTarget && el) {
+      el.focus();
+    }
     const t = setTimeout(() => scrollTargetIntoView(el, reducedMotion), 100);
-    announce(buildStepAnnouncement(current, step, activeSteps.length), 'assertive');
+    announce(buildStepAnnouncement(current, step, activeSteps.length), 'polite');
     const focusT = setTimeout(() => tooltipRef.current?.focus(), 200);
     return () => {
       clearTimeout(t);
@@ -455,7 +381,7 @@ export default function ProductTour() {
 
   const goNext = useCallback(() => {
     if (step >= activeSteps.length - 1) {
-      announce('Tutorial complete. You can replay it anytime from the Tutorial button.', 'polite');
+      announce('Tutorial complete.', 'polite');
       completeTour();
     } else {
       setStep(step + 1);
@@ -531,7 +457,7 @@ export default function ProductTour() {
     }
 
     if (type === EVENTS.TARGET_NOT_FOUND) {
-      setStep(index + 1);
+      setStep((prev) => Math.min(prev + 1, activeSteps.length - 1));
       return;
     }
 
@@ -539,17 +465,38 @@ export default function ProductTour() {
       const el = typeof stepData?.target === 'string'
         ? document.querySelector(stepData.target)
         : stepData?.target;
+      if (stepData?.focusTarget && el) el.focus();
       scrollTargetIntoView(el, reducedMotion);
     }
 
     if (type === EVENTS.STEP_AFTER) {
       if (action === ACTIONS.NEXT) {
-        setStep(index + 1);
+        if (index >= activeSteps.length - 1) {
+          completeTour();
+        } else {
+          setStep(index + 1);
+        }
       } else if (action === ACTIONS.PREV) {
         setStep(index - 1);
       }
     }
-  }, [completeTour, setStep, handleSkip, reducedMotion, announce]);
+  }, [completeTour, setStep, handleSkip, reducedMotion, announce, activeSteps.length]);
+
+  const stepsWithPlacement = useMemo(() => activeSteps.map((s) => {
+    const el = document.querySelector(s.target);
+    const placement = getSmartPlacement(el, s.placement);
+    return {
+      ...s,
+      placement,
+      floaterProps: {
+        options: {
+          ...FLOATER_OPTIONS,
+          placement,
+          offset: s.offset ?? 12,
+        },
+      },
+    };
+  }), [activeSteps, step]);
 
   const TooltipWithRef = useCallback((props) => (
     <TourTooltip {...props} tooltipRef={tooltipRef} />
@@ -561,17 +508,17 @@ export default function ProductTour() {
 
   return (
     <Joyride
-      steps={activeSteps}
+      steps={stepsWithPlacement}
       run={open && ready}
       stepIndex={step}
       continuous
       showProgress={false}
       showSkipButton={false}
-      disableOverlayClose={false}
+      disableOverlayClose
       disableCloseOnEsc
-      spotlightClicks
-      scrollToFirstStep
-      scrollOffset={120}
+      spotlightClicks={false}
+      scrollToFirstStep={false}
+      scrollOffset={100}
       spotlightPadding={8}
       tooltipComponent={TooltipWithRef}
       floaterProps={{
@@ -596,9 +543,9 @@ export function TutorialAutoStart() {
   useEffect(() => {
     if (!open && shouldAutoStart() && pathname === '/') {
       const t = setTimeout(() => {
-        announce('First visit tutorial will begin shortly. Press Escape at any time to skip.', 'polite');
+        announce('Starting the product tour. Press Escape to skip.', 'polite');
         startTour();
-      }, 1500);
+      }, 1000);
       return () => clearTimeout(t);
     }
     return undefined;

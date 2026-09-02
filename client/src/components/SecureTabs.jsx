@@ -1,5 +1,20 @@
-import { Box, Tab, Tabs } from '@mui/material';
+import { Box, Tab, Tabs, Tooltip } from '@mui/material';
 import { VU_GOLD, VU_NAVY } from '../theme';
+
+function TabLabel({ label, tooltip }) {
+  if (!tooltip) return label;
+  return (
+    <Tooltip
+      title={tooltip}
+      arrow
+      placement="top"
+      enterDelay={400}
+      PopperProps={{ sx: { zIndex: 14000 } }}
+    >
+      <span>{label}</span>
+    </Tooltip>
+  );
+}
 
 /**
  * Security-themed tab bar — navy container, gold indicator, coordinated with AppBar.
@@ -35,7 +50,7 @@ export default function SecureTabs({
             height: 3,
             borderRadius: '3px 3px 0 0',
             bgcolor: VU_GOLD,
-            boxShadow: `0 0 12px rgba(212, 175, 55, 0.45)`,
+            boxShadow: '0 0 12px rgba(212, 175, 55, 0.45)',
           },
         }}
         sx={{
@@ -48,11 +63,10 @@ export default function SecureTabs({
           <Tab
             key={t.value}
             value={t.value}
-            label={t.label}
+            label={<TabLabel label={t.label} tooltip={t.tooltip} />}
             icon={t.icon}
             iconPosition={t.icon ? 'start' : undefined}
             disabled={t.disabled}
-            title={t.tooltip}
             aria-label={t.tooltip || t.label}
             sx={{
               minHeight: 44,
@@ -61,7 +75,7 @@ export default function SecureTabs({
               fontWeight: value === t.value ? 700 : 500,
               color: value === t.value ? VU_NAVY : 'text.secondary',
               bgcolor: value === t.value ? 'rgba(255,255,255, 0.95)' : 'transparent',
-              border: value === t.value ? `1px solid rgba(0, 51, 102, 0.1)` : '1px solid transparent',
+              border: value === t.value ? '1px solid rgba(0, 51, 102, 0.1)' : '1px solid transparent',
               boxShadow: value === t.value ? '0 2px 8px rgba(0, 51, 102, 0.08)' : 'none',
               transition: 'all 0.22s ease',
               '&:hover': {

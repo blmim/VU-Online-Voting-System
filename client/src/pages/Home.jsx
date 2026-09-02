@@ -20,6 +20,7 @@ import CountdownTimer from '../components/CountdownTimer';
 import { useTutorial } from '../context/TutorialContext';
 import { useAuth } from '../context/AuthContext';
 import { PROJECT, TEAM } from '../constants/team';
+import { QUICK_LINK_TOOLTIPS } from '../constants/routeTooltips';
 import api from '../services/api';
 import FeaturedCandidateChip from '../components/FeaturedCandidateChip';
 import HeroArenaSpotlight from '../components/HeroArenaSpotlight';
@@ -231,6 +232,7 @@ export default function Home() {
               <MetroTile
                 key={tile.title}
                 data-tour={tour}
+                tooltip={tile.to ? QUICK_LINK_TOOLTIPS[tile.to] : undefined}
                 {...tileProps}
               />
             );
